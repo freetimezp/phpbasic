@@ -68,3 +68,15 @@ $final2 = 'Hello ';
 $str2 = 'php';
 $final2 .= $str2;
 var_dump($final2);
+
+echo '<hr>';
+/*lesson 5*/
+
+$long_text = <<< HEREDOC
+"I am learning {$arr['language']}"
+'I am learning "PHP"';
+HEREDOC;
+var_dump($long_text);
+
+$long_text = `dir`;
+var_dump($long_text);
