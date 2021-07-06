@@ -186,3 +186,39 @@ switch(true) {
     default:
         echo 'default';
 }
+
+echo '<hr>';
+/*lesson 9*/
+
+for($i = 0; $i < 10; $i++) {
+    echo 222 . '<br>';
+}
+
+echo '<hr>';
+
+$a = 0;
+for(;;) {
+    echo 333 , '<br>';
+    $a++;
+    if($a === 10) {
+        break;
+    }
+}
+
+echo '<hr>';
+
+$i = 0;
+
+while($i < 10) {
+    echo 444 . '<br>';
+    $i++;
+}
+
+echo '<hr>';
+
+$i = 0;
+
+do {
+    echo 555 . '<br>';
+    $i++;
+}while($i < 10);
