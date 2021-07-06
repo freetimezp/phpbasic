@@ -80,3 +80,20 @@ var_dump($long_text);
 
 $long_text = `dir`;
 var_dump($long_text);
+
+echo '<hr>';
+/*lesson 6*/
+
+$a = 1;
+$str = '2.2E2st2ring';
+
+$final = $a + $str;
+var_dump($final);
+$final = $a . $str;
+var_dump($final);
+
+var_dump($str);
+
+$str = (float)$str;
+
+var_dump($str);
