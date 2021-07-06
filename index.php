@@ -97,3 +97,59 @@ var_dump($str);
 $str = (float)$str;
 
 var_dump($str);
+
+echo '<hr>';
+/*lesson 7*/
+
+$a = 1;
+
+if($a == 1) {
+    echo 'yes';
+}
+
+echo '<hr>';
+
+$a = '1';
+
+if($a === 1) {
+    echo 'yes';
+}
+
+echo '<hr>';
+
+$a = '1';
+
+if($a !== 1) {
+    echo 'yes';
+}elseif($a === 2) {
+    echo 3;
+}else{
+    echo 'no';
+}
+
+echo '<hr>';
+
+$a = 1;
+$b = 4;
+$c = 5;
+
+if($a === 1 && $b === 2 || $c === 3) {
+    echo '123';
+}else{
+    echo '321';
+}
+
+echo '<hr>';
+
+$a = 2;
+
+$d = $a === 2 ? 'yes' : 'no';
+echo $d;
+var_dump($d);
+
+$d = $a === 2 ?: 'no';
+var_dump($d);
+
+$d = $a ?: 'no';
+var_dump($d);
+
