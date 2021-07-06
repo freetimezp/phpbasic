@@ -153,3 +153,36 @@ var_dump($d);
 $d = $a ?: 'no';
 var_dump($d);
 
+echo '<hr>';
+/*lesson 8*/
+
+$b = 2;
+
+switch($b) {
+    case 1:
+        echo 1;
+        break;
+    case 2:
+        echo 2;
+        break;
+    case 3:
+        echo 3;
+        break;
+    default:
+        echo 'default';
+}
+echo '<hr>';
+
+switch(true) {
+    case $b === 1:
+        echo 1;
+        break;
+    case $b === 2:
+        echo 2;
+        break;
+    case $b === 3:
+        echo 3;
+        break;
+    default:
+        echo 'default';
+}
