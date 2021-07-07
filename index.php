@@ -222,3 +222,37 @@ do {
     echo 555 . '<br>';
     $i++;
 }while($i < 10);
+
+echo '<hr>';
+/*lesson 10*/
+
+$meshok = [
+    'кошелек' => 500,
+    'конверт' => 'курсовая работа',
+    'чехол' => false,
+    'барсетка' => [
+        'ipad', 'ipod', ['samsung', 'lenovo']
+    ]
+];
+
+foreach ($meshok as $key => $item) {
+    echo '$key - ';
+    var_dump($key) . '<br>';
+    echo '$item - ';
+    var_dump($item) . '<br>';
+}
+
+for($i = 0; $i < count($meshok['барсетка']); $i++) {
+    var_dump($meshok['барсетка'][$i]) . '<br>';
+}
+echo '<br>';
+
+foreach ($meshok as $key => $item) {
+    $meshok[$key] .= '!!!';
+    echo $meshok[$key] , '<br>';
+    echo '$item - ' . $item . '<br>';
+}
+
+
+
+
