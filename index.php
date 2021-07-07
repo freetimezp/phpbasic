@@ -37,3 +37,20 @@ $foo('Hello');
 
 echo '<hr>';
 /*lesson 13*/
+
+$name = 'Masha';
+
+function reName1($newName, &$innerName, &$other = false) {
+    $innerName = $newName;
+    echo $innerName;
+    $other = 'hello';
+    return '!!!WORLD';
+}
+
+$str = reName1('Olga', $name, $other);
+var_dump($str);
+echo '<br>' . $name;
+var_dump($other);
+
+echo '<hr>';
+/*lesson 14*/
